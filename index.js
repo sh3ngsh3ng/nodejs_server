@@ -24,7 +24,9 @@ app.use(
 );
 
 async function main() {
-  
+  app.get("/", (req,res) => {
+    res.render("main")
+  })
 }
 
 main();
